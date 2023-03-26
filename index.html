@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juno Photography</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Juno</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--hero-->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Juno Photography</h1>
+      <p>We shoot for the stars.</p>
+      <button class="btn btn-primary btn-olive">Learn More</button>
+    </div>
+  </div>
+  <!--about-->
+  <section class="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="https://images.unsplash.com/photo-1517481705099-72660903e569?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="About image" class="img-fluid mx-auto d-block">
+        </div>
+        <div class="col-md-6 text-center">
+          <h2>About Us</h2>
+          <p>Juno is an environm ental photography agency that specializes in photographing natural phenomena including, forests, beaches, cloudscapes, the night sky, and more.</p>
+          <p>We try out best to capture the majesty of nature through our lense.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--features-->
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" class="card-img-top" alt="beach sunset" height="330px">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Kauai, Hawaii - 2019</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1547014762-3a94fb4df70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80" class="card-img-top" alt="tall trees" height="330px">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Redwood National Park, USA - 2019</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1551524431-cb613a235076?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654&q=80" class="card-img-top" alt="snowy mountain peaks" height="330px">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Verbier, Switzerland - 2019</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--contact-->
+  <section class="contact-section">
+    <div class="container">
+      <div class="row justify-content-center pt-5">
+        <div class="col-md-6">
+          <div class="form-wrapper">
+            <h2>Contact Us</h2>
+            <p>Questions? Send us a message about our services, booking, our portfolio, etc.</p>
+            <form action="send-email.php" method="post">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-olive">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!--footer-->
+<footer class="mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>&copy; 2023 Juno Photography. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+          <li class="list-inline-item"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
+  
+  
+</body>
+</html>
